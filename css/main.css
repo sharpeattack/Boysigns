@@ -13,6 +13,88 @@
 
 html {
   color: #333030;
-  font-size: 1.125em;
+  font-size: 18px;
   line-height: 1.666;
+}
+
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+
+section {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+
+
+section {
+	background: linear-gradient(-45deg,  #fafafa, #E5FFF6, #EBEBFF);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255);
+  opacity: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100vw;
+  position: absolute;
+  top: 50vh;
+  
+  transform: translateX(-50%);
+  transform: translateY(-50%); 
+
+  text-align: center;
+  opacity: 1;
+}
+
+h1 { 
+  font-weight: 400;
+  font-size: 7.1em;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  margin: 0;
+  padding: 0 0 36px 0;
+}
+
+p {
+  font-size: 1.5em;
+  margin :0;
+  padding: 0;
+}
+
+/* Mobile  */
+@media (max-width: 600px) { 
+h1 { 
+  font-size: 4rem;
+  padding: 0 0 18px 0;
+}
+
+p {
+  font-size: 1em;
+}
 }
